@@ -15,11 +15,11 @@ log = logging.getLogger(__name__)
 #: PySceneDetect content-detector threshold. Lower finds more cuts. 27 is the
 #: library default and holds up well on talking-head and podcast footage; going
 #: lower starts firing on lighting changes and gesture blur.
-DEFAULT_THRESHOLD = 27.0
+DEFAULT_THRESHOLD = 20.0
 
 #: Shots shorter than this are merged into their neighbour. A sub-second shot
 #: isn't worth its own framing decision, and re-framing across one looks frantic.
-MIN_SHOT_S = 0.8
+MIN_SHOT_S = 0.5
 
 
 @dataclass
